@@ -2,16 +2,20 @@
 
 This repository explores and tests common techniques for prompt injection attacks in AI systems, focusing on vulnerabilities and mitigation strategies.
 
+# Prompt Injection Testing Repository
+
 ## Overview
-Prompt injection is a method used to manipulate the output of AI models by crafting inputs that override their intended behavior. This repository contains scripts designed to:
+This repository is dedicated to testing and understanding prompt injection techniques. Prompt injection is a critical challenge in AI safety and security, where malicious input can hijack an AI's behavior. These scripts aim to simulate and explore vulnerabilities to better understand and mitigate such risks.
 
-- Simulate basic and advanced prompt injection techniques.
-- Test AI models' resilience against such attacks.
-- Provide insights into improving prompt safety.
+## Included Scripts
+1. **`test_basic_prompt_injection.py`**
+   - Demonstrates a simple prompt injection example to illustrate how malicious inputs can override initial prompts.
 
-## Contents
-- `test_basic_prompt_injection.py`: Demonstrates a straightforward prompt injection attack.
-- `test_advanced_prompt_injection.py`: Explores a more complex prompt injection scenario.
+2. **`test_advanced_prompt_injection.py`**
+   - Explores a more advanced injection scenario where the AI might inadvertently reveal sensitive data.
+
+3. **`complex_prompt_injection_simulation.py`**
+   - Simulates sophisticated prompt injection attacks involving dynamic payloads to demonstrate potential vulnerabilities in more complex AI systems.
 
 ## Usage
 1. Clone this repository:
