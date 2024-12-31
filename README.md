@@ -16,7 +16,7 @@ Prompt injection is a method used to manipulate the output of AI models by craft
 ## Usage
 1. Clone this repository:
    ```bash
-   git clone https://github.com/nwang783/prompt-injection
+   git clone https://github.com/nwang783/prompt-injection.git
    ```
 2. Navigate to the repository directory:
    ```bash
