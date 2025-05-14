@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #3e4451;
+  padding: 0.2em 0.4em;
+  margin: 0 0.2em;
+  border-radius: 3px;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #1e222b;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.App-main {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.scenario, .submission-area, .results-area {
+  background-color: #3e4451;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.scenario h2, .submission-area h2, .results-area h3 {
+  margin-top: 0;
+  color: #61dafb;
+}
+
+textarea {
+  width: calc(100% - 22px); /* Account for padding and border */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #282c34;
+  color: white;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 1em;
+}
+
+button {
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #21a1f1;
+}
+
+.results-area pre {
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  word-wrap: break-word;      /* Internet Explorer 5.5+ */
+  background-color: #282c34;
+  padding: 15px;
+  border-radius: 4px;
+  color: #cddc39; /* Lime green for general outcome */
+}
+
+.results-area p {
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.feedback-rejected {
+  color: #ff7b7b; /* Light red for rejected feedback */
+  background-color: #443030;
+  border-left: 5px solid #ff7b7b;
+}
+
+.feedback-approved {
+  color: #98fb98; /* Light green for approved feedback */
+  background-color: #304430;
+  border-left: 5px solid #98fb98;
+}
+
+.outcome-success-flag {
+    color: #ffeb3b; /* Yellow for flag */
+    font-weight: bold;
+}
+
+.outcome-normal {
+    /* Default color is already set by .results-area pre */
+}
+
+.error-message pre {
+  color: #ff7b7b; /* Light red for errors */
+  background-color: #443030;
+}
+
+.App-footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #3e4451;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.App-footer code {
+    background-color: #2c303a;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
